@@ -1,0 +1,65 @@
+{
+"summarizeLogs.customPatterns": [
+
+     {
+        
+            "pattern": "Alert Displayed: ([^[]+)",
+    
+            "foreground": "#ffffff",
+    
+            "background": "#666666",
+            
+            "overviewRulerColor":"white",
+
+            "reason": "User Account Registered",
+
+            "mitigation": "Check Server Logs for more details",
+
+            "comments":"Check Server Logs for more details" 
+    
+        },
+        {
+
+            "pattern": "MyApp.TimeoutException",
+
+            "fontWeight": "bold",
+
+            "textDecoration": "green underline",
+
+            "reason": "Sending Request to API",
+
+            "mitigation": "API Timed out, because of internet connectivity issue.",
+
+            "comments":""
+
+        },
+        {
+
+            "pattern": "Exception:(.*?)\n",
+
+            "foreground": "#ffe1e1",
+
+            "background": "#ff0000",
+          
+            "overviewRulerColor":"#ff0000"
+
+        },
+        {
+
+            "pattern": "Failed to login with user:",
+
+            "foreground": "#ffe1e1",
+
+            "background": "#cfff61",
+            
+            "overviewRulerColor":"#ff0000",
+
+            "reason": "API or Server Error",
+
+            "mitigation": "Check Server Logs for more details",
+
+            "comments":"Check Server Logs for more details" 
+        }
+        
+    ]
+}
