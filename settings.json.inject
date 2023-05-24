@@ -3,19 +3,19 @@
 
      {
         
-            "pattern": "Alert Displayed: ([^[]+)",
+            "pattern": "UnHandledException",
     
             "foreground": "#ffffff",
     
-            "background": "#666666",
+            "background": "#ff0000",
             
-            "overviewRulerColor":"white",
+            "overviewRulerColor":"#ff0000",
 
-            "reason": "User Account Registered",
+            "reason": "Unhandled Exception may be due to missing try catch",
 
-            "mitigation": "Check Server Logs for more details",
+            "mitigation": "Check Code for missing null checks, and try catch blocks may be missing.",
 
-            "comments":"Check Server Logs for more details" 
+            "comments":"Check Source Code for more details" 
     
         },
         {
